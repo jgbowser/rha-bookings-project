@@ -8,7 +8,7 @@ export default function BookablesList() {
   const bookablesInGroup = bookables.filter(b => b.group === group)
 
   function nextBookable() {
-    setBookableIndex(i => ((i + 1) % bookablesInGroup.length))
+    setBookableIndex(i => (i + 1) % bookablesInGroup.length)
   }
 
   return (
